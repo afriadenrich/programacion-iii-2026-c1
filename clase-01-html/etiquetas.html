@@ -1,0 +1,154 @@
+<html>
+  <head>
+    <title>Etiquetas</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="./etiquetas.html">Etiquetas</a>
+          <a href="./malas-practicas.html">Malas</a>
+          <a href="./index.html">Index</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Encabezados -->
+    <h1>Header 1 -> Encabezado 1</h1>
+    <h2>Header 2 -> Encabezado 2</h2>
+    <h3>Header 3 -> Encabezado 3</h3>
+    <h4>Header 4 -> Encabezado 4</h4>
+    <h5>Header 5 -> Encabezado 5</h5>
+    <h6>Header 6 -> Encabezado 6</h6>
+
+    <!-- Párrafos -->
+    <p id="parrafo">Párrafo ............... pensado para textos largos</p>
+
+    <!-- Peso a las palabras -->
+    <strong>Negrita</strong>
+    <b>Negrita</b>
+
+    <em>Era esta?</em>
+    <i>italica / cursiva</i>
+
+    <u>Subrayado</u>
+
+    <!-- Etiquetas semánticas (strong, em, main, section...)-->
+
+    <mark>Mark</mark>
+    <cite>"Hola mundo"</cite>
+
+    <!-- Break Line -> Salto de linea-->
+
+    <p>texto</p>
+    <br />
+    <p>texto</p>
+
+    <!-- Listados -->
+    <!-- LI -> List Item -> 
+        <li></li> Elemento de listado-->
+
+    <!-- Ordered List -> lista ordenada -->
+    <ol type="A" start="3">
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+
+      <ol>
+        <li>Subelemento 1</li>
+        <li>Subelemento 2</li>
+        <ol>
+          <li>Otra cosa</li>
+        </ol>
+        <li>Subelemento 3</li>
+      </ol>
+
+      <li>Elemento 3</li>
+    </ol>
+
+    <!-- Unsorted List -> lista desordenada -> CONTIENE a la lista -->
+    <ul type="square">
+      <li type="disc">Elemento 1</li>
+      <li>Elemento 2</li>
+      <ul>
+        <li>Sublista</li>
+        <li>Sublista</li>
+        <ul>
+          <li>Sublista</li>
+          <li>Sublista</li>
+          <li>Sublista</li>
+        </ul>
+        <li>Sublista</li>
+      </ul>
+      <li>Elemento 3</li>
+    </ul>
+
+    <!-- Media / imagenes / audio / video -->
+
+    <!-- NO NECESITA etiqueta de cierre </img> slef-closed NO tiene contenido -->
+    <!-- source -> src -->
+
+    <!-- Ruta ABSOLUTA-->
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/6/67/UTN_logo.jpg"
+    />
+
+    <!-- Ruta RELATIVA -->
+    <img src="./imagenes/tren2.jpg" width="200" />
+    <!-- 
+    <video controls src="./imagenes/ScreenRecorderProject9_4.mp4"></video>
+    <video controls src="./imagenes/ScreenRecorderProject9_4.mp4"></video> -->
+
+    <!-- LINKS -> a -> attachment -->
+    <a href="https://google.com">GOOGLE</a>
+    <a href="./minimo.html">Minimo.html</a>
+    <a href="./etiquetas.html#parrafo">Parrafo</a>
+    <a href="#parrafo">Parrafo</a>
+
+    <!-- Estructura -->
+    <main>
+      <p>parrafo</p>
+      <p>parrafo</p>
+    </main>
+    <section>
+      <p>parrafo</p>
+      <p>parrafo</p>
+    </section>
+    <nav>
+      <p>parrafo</p>
+      <p>parrafo</p>
+    </nav>
+    <header>
+      <p>parrafo</p>
+      <p>parrafo</p>
+    </header>
+    <div>
+      <p>Div no es semántica</p>
+      <p>parrafo</p>
+    </div>
+    <article>
+      <p>parrafo</p>
+      <p>parrafo</p>
+    </article>
+    <aside>
+      <p>parrafo</p>
+      <p>parrafo</p>
+    </aside>
+    <footer>
+      <p>parrafo</p>
+      <p>parrafo</p>
+    </footer>
+    <menu>
+      <p>parrafo</p>
+      <p>parrafo</p>
+    </menu>
+    <details>
+      <p>p</p>
+    </details>
+
+    <!-- Otra etiqueta en linea-->
+    <span>en linea </span>
+    <span>en linea </span>
+    <span>en linea </span>
+    <code>console.log("Hola mundo");</code>
+  </body>
+</html>
