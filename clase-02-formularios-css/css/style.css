@@ -1,0 +1,91 @@
+/*
+    Ejemplo.
+    Cambia todos los PARRAFOS (p) a color (de texto) ROJO
+*/
+
+p {
+  color: red;
+}
+
+/* DEFINICIONES
+
+SELECTOR/SELECTORES: Es lo que indica a qué elemento o elementos apuntan las propiedades CSS.
+Es lo que está antes de las llaves.
+
+PROPIEDADES: ¿Qué se modifica? colores, tamaños, pocisiones, animaciones, direcciones, etc.
+
+VALORES 
+
+
+*/
+
+/* 
+TIPOS DE SELECTORES:
+
+- de etiqueta (TODAS las etiquetas de ese nombre)
+p {}
+div {}
+*/
+
+h1 {
+  color: blueviolet;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 10px;
+}
+
+/*
+Selector CLASS / clase
+Puedo definir "Clases" y agrupar elementos de cualquier tipo en esas clases
+Se definen con un '.'
+*/
+
+.texto-azul {
+  color: blue;
+}
+
+/*
+- por ID
+#parrafo-3 {}
+#id
+#chat
+
+Por ID es solo para apuntar a UN elemento especifico*/
+
+#parrafo-3 {
+  color: green;
+  /* ... */
+}
+
+#ejemplo {
+  color: aquamarine;
+}
+
+body {
+  font-size: 30px;
+}
+
+/*
+  pixeles: px: tamaño fijo en pixeles
+  em: multiplica el valor asignado por el tamaño de fuente del elemento padre.
+
+  <div 30px
+  <h1 2em  2x30 = 60px
+
+  rem: lo mismo que em, pero en lugar del padre, es con el body
+
+  <body 30px
+  <div 50px
+  <h1 2rem -> 2x30 = 60px
+*/
+
+/* Selector genério -> Selecciona TODO. ES EL MENOS ESPECIFICO
+*/
+
+* {
+  color: aqua; /* !important;*/
+  font-style: italic;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: 1px wavy underline red;
+}
