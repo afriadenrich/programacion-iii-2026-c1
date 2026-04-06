@@ -1,0 +1,30 @@
+/* COMODIN -> AFECTA A TODO pero es muy facil de sobreescribir*/
+* {
+  background-color: rgba(81, 0, 255, 0.2);
+  font-size: 20px;
+}
+
+html {
+  background-color: #e71d1dff;
+  color: #0000ff; /* 3 bytes */
+  font-size: 100px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* HEXAGECIMAL 
+0 1 2 3 4 5 6 7 8 9 A B C D E F
+A = 10
+B = 11
+C = 12
+D = 13
+E = 14
+F = 15
+10 = 16
+11 = 17
+...
+1F = 31 
+FF = 15 * 16 + 15 = 255
+*/
