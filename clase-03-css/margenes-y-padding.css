@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+}
+
+#contenedor-abuelo {
+  height: 500px;
+  background-color: #ff00ff;
+  display: flow-root;
+}
+
+#contenedor-padre {
+  height: 400px;
+  background-color: #00fff7;
+
+  /* Márgen: Espacio hacia afuera */
+  margin: 20px;
+  /* Padding: Espacio hacia adentro */
+  padding: 30px;
+}
+
+#contenedor-hijo {
+  height: 50%;
+  background-color: #4400ff;
+}
+
+#contenedor-abuelo2 {
+  height: 500px;
+  background-color: #ff00ff;
+  padding: 20px;
+}
+
+#contenedor-padre2 {
+  height: 400px;
+  background-color: #00fff7;
+  padding: 25px;
+
+  /* Márgen: Espacio hacia afuera */
+  /* Padding: Espacio hacia adentro */
+}
+
+#contenedor-hijo2 {
+  height: 50%;
+  background-color: #4400ff;
+}
