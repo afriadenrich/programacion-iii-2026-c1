@@ -1,0 +1,116 @@
+body {
+  background-color: #0d1117;
+  color: #fff;
+
+  display: grid;
+  grid-template-columns: 200px auto 350px;
+  grid-template-rows: 70px auto;
+}
+
+header {
+  grid-row: 1;
+  grid-column: 1 / 4;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  background-color: #3d444d;
+}
+
+/* AGRUPAR SELECTORES */
+/* header {
+  padding: 20px;
+}
+
+nav {
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+aside {
+  padding: 20px;
+} */
+
+header,
+nav,
+main,
+aside {
+  padding: 20px;
+}
+
+#boton-flotante {
+  width: 50px;
+  height: 50px;
+  background-color: #f00;
+
+  position: relative;
+  left: 30px; /* Alejarse de la izq 50px (mueve a la derecha */
+}
+
+#boton-flotante-segundo {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(22, 142, 22);
+
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  z-index: 100;
+}
+
+#boton-flotante-tercero {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(0, 238, 255);
+
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 0;
+}
+
+/* SELECTORES MÁS ESPECÍFICOS*/
+button {
+  background-color: #3d444d;
+  color: #fff;
+}
+
+/* TODOS LOS BOTONES DE MAIN (#home y #feed) */
+/* Cualquier descendiente que cumpla la condición */
+main button {
+  background-color: #f00;
+}
+
+/* Hijos directos > */
+main > section > button {
+  background-color: #a0a;
+}
+
+main > section > .verde {
+  background-color: green;
+}
+
+/* Siempre que haya dos div seguidas (hermanas), AFECTA A LA SEGUNDA. */
+div + div {
+  color: #f00;
+}
+
+/* ~ Altgr + 4  O  Control + Alt + 4*/
+textarea ~ button {
+  border-radius: 50px;
+}
+
+#home > button {
+}
+
+nav h1 {
+  /* No importa cuántos elementos haya en el medio, si dentro de nav o de cualquier hijo de nav, o nieto, o bisnieto etc hay un h1, lo afecta */
+}
+
+nav > h1 {
+  /* h1 TIENE que estar directamente dentro de nav. No puede haber etiquetas en el medio */
+}

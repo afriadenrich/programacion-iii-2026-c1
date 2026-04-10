@@ -1,0 +1,153 @@
+/*PERSONALIZACIÓN DE ETIQUETAS*/
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #1f3b4d;
+  margin: 0;
+
+  display: grid;
+  grid-template-rows: 100px auto auto;
+}
+
+a {
+  color: #7c8592;
+  text-decoration: none;
+}
+
+p {
+  color: #a1acb9;
+}
+
+/*---------------------------*/
+/* PERSONALIZACIÓN REF A IDs*/
+
+.fondo-azul {
+  background-color: #0b1320;
+  grid-row: 1;
+}
+
+/*TOPE DE PAGINA*/
+#top-of-page {
+  display: flex;
+  justify-content: space-between;
+
+  /* COMBO DE CENTRAR COSAS CON MÁRGENES*/
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#image-and-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#title-of-page {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-left: 3%;
+}
+
+#top-page-links {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: right;
+  margin-top: 2.3%;
+
+  gap: 7%;
+}
+
+/*SECCIÓN MAIN ANTES DE CARDS*/
+
+#main-cuadrant {
+  border: 1px solid #7c8592;
+  width: 54.2rem;
+  height: max-content;
+}
+
+#main-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+
+#main-navigation {
+  display: flex;
+}
+
+#card-1 {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+
+#card-2 {
+  grid-column: 3/4;
+  grid-row: 5/6;
+}
+
+#card-3 {
+  grid-column: 4/5;
+  grid-row: 5/6;
+}
+
+#bottom-info {
+  display: flex;
+}
+
+/*---------------------------*/
+/*PERSONALIZACIÓN CON CLASES*/
+
+.section-title {
+  color: #dce2eb;
+  font-size: 1.5rem;
+}
+
+.mail-format {
+  color: #316d7f;
+}
+
+.mini-title {
+  color: #8ca2b4;
+  font-weight: 600;
+  font-size: 0.93em;
+}
+
+.principal-button {
+  color: #000000;
+  font-weight: 700;
+  background-color: #70e8c0;
+  width: 18%;
+}
+
+.card-title {
+  color: #e8edf5;
+  margin-top: 0.1em;
+}
+.main-text {
+  color: #a6b3be;
+}
+
+.totalcard-nav {
+  border: 0.1px solid gray;
+  margin: 0.5em;
+  flex-direction: column;
+  width: min-content;
+}
+
+.topcard-nav {
+  padding: 1px;
+  background-color: #182230;
+  border: 1px solid #245370;
+  width: 17.2rem;
+}
+
+.top-link {
+  color: #dde9e5;
+}
+
+/*---------------------------*/
