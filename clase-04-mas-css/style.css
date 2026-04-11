@@ -111,6 +111,102 @@ nav h1 {
   /* No importa cuántos elementos haya en el medio, si dentro de nav o de cualquier hijo de nav, o nieto, o bisnieto etc hay un h1, lo afecta */
 }
 
-nav > h1 {
+nav > h1,
+section > h1 {
   /* h1 TIENE que estar directamente dentro de nav. No puede haber etiquetas en el medio */
 }
+
+/* PSEUDOSELECTORES */
+
+/* Cuando pasa el mouse por encima */
+h1:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+h1:active {
+  background-color: rgb(25, 213, 25);
+}
+
+h1 {
+  background-color: #a0a;
+}
+
+textarea:focus {
+  color: #f00;
+}
+
+/* De todos los párrafos decendientes de #feed. SOLO actuar sobre el que sea un séptimo hermano, no importa de qué */
+/* 
+#feed button:nth-child(2) {
+  color: #f00;
+  background-color: #fff;
+}
+#feed p:nth-child(3n) {
+  color: #f00;
+  background-color: #fff;
+} */
+
+#feed p:nth-of-type(1),
+#feed p:nth-of-type(3) {
+  color: #f00;
+  background-color: #fff;
+}
+
+div:has(h1) {
+  /* Este pinta el div*/
+  background-color: #a0a;
+}
+
+div h1 {
+  /* Este pinta el H1*/
+}
+
+/* PSEUDOELEMENTOS */
+div::after {
+  content: "X";
+  border: solid #000 dashed;
+  border-radius: 5px;
+}
+
+/* MEDIA QUERIES */
+/* MEDIA "los medios" lo visual, las imagenes, los videos, los audios, etc. */
+/* QUERIES */
+
+/* RESPONSIVE - Hacer que la app se adapte a cualquier entorno. Nos vamos a enfocar en dististos tamaños de pantalla. Se puede profundizar MUCHO más que eso. */
+
+#changelog {
+  background-color: #3d444d;
+}
+
+/* Ancho mínimo -> Si no se supera, no se ejecuta */
+@media (min-width: 900px) {
+  aside {
+    display: block;
+  }
+}
+
+/* Ancho máximo: 900px -> mientras que no se supere el máximo establecido (900px), se va a tener encuenta esta query */
+
+@media (max-width: 900px) {
+  aside {
+    display: none;
+  }
+
+  main {
+    grid-column: 2/4;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    grid-row: 2;
+    grid-column: 1/4;
+  }
+
+  main {
+    grid-column: 1/4;
+  }
+}
+
+/* IMPORTANTE EL ÓRDEN -> Arrancar siempre de un extremo e ir hacia el otro */
