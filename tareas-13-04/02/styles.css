@@ -1,0 +1,139 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 1fr minmax(auto, 1200px)1fr;
+    color: white;
+    background-color: #18191a;
+}
+
+header{
+    background-color: #242526;
+    grid-row: 1;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+header ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+#primerAside{
+    grid-row: 2;
+    grid-column: 1;
+    font-size: x-large;
+    padding-left: 10px;
+}
+
+.uls li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#ultimoPAside {
+    font-size: medium;
+}
+
+article{
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: large;
+    padding-top: 20px;
+}
+
+#inputMedio{
+    border-radius: 40px;
+    box-sizing: border-box;
+    padding: 15px 80px;
+}
+
+#feed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    width: 90%;
+    gap: 20px;
+}
+
+#crearPost{
+    display: flex;
+    gap: 10px;
+    background-color: #242526;
+    border-radius: 8px;
+    padding: 10px 40px;
+}
+
+.post{
+    background-color: #242526;
+    text-align: center;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+#segundoAside{
+    grid-row: 2;
+    grid-column: 3;
+    font-size: x-large;
+    padding-right: 10px;
+}
+
+#inputHeader{
+    border-radius: 40px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin-left: 8px;
+}
+
+@media screen and (max-width: 1238px){
+    header span {
+        display: none;
+    }
+    #inputHeader{
+        width: 40px;
+    }
+} 
+
+@media screen and (max-width:899px){
+    #primerAside{
+        display:none;
+    }
+}
+
+@media screen and (max-width:799px){
+    #segundoAside{
+        display:none;
+    }
+
+    article span{
+        display:none;
+    }
+
+    #inputMedio{
+        width: 50px;
+    }
+
+    #listaMedioHeader{
+        display: none;
+    }
+
+    #feed{
+        width: 100%;
+    }
+}

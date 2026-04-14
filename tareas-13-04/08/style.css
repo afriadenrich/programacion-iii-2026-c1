@@ -1,0 +1,122 @@
+* {
+  border: solid #f00 1px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  color: white;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: 80px 80px 80px 160px 80px 320px;
+
+  grid-template-columns: 140px auto;
+}
+
+aside {
+  grid-column: 1;
+  grid-row: 1/5;
+
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+
+  padding: 10px;
+}
+
+#barra-busqueda {
+  grid-column: 2;
+  grid-row: 1;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px;
+}
+
+main {
+  max-width: 1500px;
+}
+
+#tematica {
+  grid-column: 2;
+  grid-row: 2;
+
+  display: flex;
+  flex-direction: row;
+
+  padding: 10px;
+}
+
+#tematica > button {
+  width: 100px;
+  height: 50px;
+
+  margin: 10px;
+}
+
+#seleccion-rapida {
+  grid-column: 2;
+  grid-row: 3;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px;
+}
+
+#canciones-seleccion-rapida {
+  grid-column: 2;
+  grid-row: 4;
+  height: 500px;
+
+  padding: 10px;
+
+  justify-content: first baseline;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  align-content: flex-start;
+  gap: 10px;
+}
+
+#canciones-seleccion-rapida > button {
+  width: 360px;
+  height: 120px;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+#esenciales {
+  grid-column: 2;
+  grid-row: 5;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px;
+}
+
+#esenciales-botones {
+  grid-column: 2;
+  grid-row: 6;
+
+  padding: 10px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+aside > button {
+  width: 80px;
+  height: 50px;
+}
