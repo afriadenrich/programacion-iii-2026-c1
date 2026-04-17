@@ -1,5 +1,22 @@
 # Programacion III - 2026 - 1er cuatrimestre
 
+# Fechas Importantes
+
+11/05/2026 - Primer Parcial
+22/06/2026 - Segundo Parcial
+26/06/2026 - Entrega TP
+
+29/06/2026 - Recuperatorio Primer Parcial
+03/07/2026 - Recuperatorio Segundo Parcial
+06/07/2026 - Recuperatorio TP
+
+06/07/2026 - Última instancia para promocionar la materia
+17/07/2026 - Última instancia para aprobarr la materia (máximo 4).
+
+# Clases
+
+
+
 ## Clase 01 - HTML - 27/03/2026
 
 ### Introducción HTML
@@ -57,7 +74,9 @@
 ## Clase 09 - 27/04/2026
 ## Clase 10 - 04/05/2026
 ## Clase 11 - 08/05/2026
-## Clase 12 - 11/05/2026
+
+## Clase 12 - Primer Parcial - 11/05/2026
+
 ## Clase 13 - 15/05/2026
 ## Clase 14 - 18/05/2026
 ## Clase 15 - 22/05/2026
@@ -67,7 +86,7 @@
 ## Clase 19 - 08/06/2026
 ## Clase 20 - 12/06/2026
 ## Clase 21 - 19/06/2026
-## Clase 22 - 22/06/2026
+## Clase 22 - Segundo Parcial - 22/06/2026
 ## Clase 23 - 26/06/2026
 ## Clase 24 - 29/06/2026
 ## Clase 25 - 03/07/2026
