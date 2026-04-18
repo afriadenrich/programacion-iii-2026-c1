@@ -1,0 +1,9 @@
+.parrafo {
+  font-size: 40px;
+}
+
+/* kebab-case es el que es con guiones */
+#tarea {
+  font-size: 20px;
+  color: rgb(47, 116, 93);
+}

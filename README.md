@@ -15,8 +15,6 @@
 
 # Clases
 
-
-
 ## Clase 01 - HTML - 27/03/2026
 
 ### Introducción HTML
