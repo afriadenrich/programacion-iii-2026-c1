@@ -1,0 +1,13 @@
+#registro {
+  background-color: #000;
+  color: #fff;
+}
+
+.error {
+  color: rgb(181, 45, 45);
+}
+
+form {
+  border: dotted #000 1px;
+  padding: 10px;
+}

@@ -56,21 +56,23 @@
 - [Selectores de atributo](https://developer.mozilla.org/es/docs/Learn_web_development/Core/Styling_basics/Attribute_selectors)
 - [PseudoClases](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes)
 
-## Clase 05 - 13/04/2026
+## Clase 05 - JS - 13/04/2026
 
 - [Palabras clave y otras expresiones](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators)
 - [Tipos primitivos](https://developer.mozilla.org/es/docs/Glossary/Primitive)
 - [Funciones](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions)
 - [Objetos](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_objects)
 
-## Clase 06 - 17/04/2026
+## Clase 06 - JS y DOM 17/04/2026
 
+## Clase 07 - DOM y localstorage - 20/04/2026
 
+## Clase 08 - Asincronísmos - 24/04/2026
 
-## Clase 07 - 20/04/2026
-## Clase 08 - 24/04/2026
-## Clase 09 - 27/04/2026
-## Clase 10 - 04/05/2026
+## Clase 09 - Bootstrap - 27/04/2026
+
+## Clase 10 - Simulacro de parcial - 04/05/2026
+
 ## Clase 11 - 08/05/2026
 
 ## Clase 12 - Primer Parcial - 11/05/2026
