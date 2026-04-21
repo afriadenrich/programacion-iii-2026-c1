@@ -7,7 +7,20 @@
   color: rgb(181, 45, 45);
 }
 
+.negrita {
+  font-weight: 900;
+}
+
 form {
   border: dotted #000 1px;
   padding: 10px;
 }
+
+input {
+  color: #000;
+}
+
+/* input:focus {
+  color: #f00;
+} */
+/* Cuando el input NO esté focus, no ponga rojo*/
