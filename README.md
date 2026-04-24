@@ -73,7 +73,7 @@
 
 ## Clase 10 - Simulacro de parcial - 04/05/2026
 
-## Clase 11 - 08/05/2026
+## Clase 11 - NPM - 08/05/2026
 
 ## Clase 12 - Primer Parcial - 11/05/2026
 
