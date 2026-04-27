@@ -1,7 +1,16 @@
 # Programacion III - 2026 - 1er cuatrimestre
 
+# Temas Parical
+
+Poco HTML - CSS (flex/grid) - JS: Objetos, DOM, Asincronísmos, Localstorage, JSON.
+
+# Simulacro
+
+Va a ser una versión más extensa del parcial para que practiquen y tengan código propio disponbile al momento del parcial.
+
 # Fechas Importantes
 
+04/05/2026 - Simulacro Parcial
 11/05/2026 - Primer Parcial
 22/06/2026 - Segundo Parcial
 26/06/2026 - Entrega TP
