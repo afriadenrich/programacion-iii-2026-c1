@@ -5,7 +5,12 @@ const {
   modificarAuto,
   eliminarAuto,
 } = require("../controllers/autos.controller");
+
+// defino el router
 const autoRouter = require("express").Router();
+
+// const express = require("express");
+// const router = express.Router();
 
 autoRouter.get("/", buscarAutos);
 
