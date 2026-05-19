@@ -2,6 +2,8 @@
 const express = require("express");
 const { Sequelize, DataTypes } = require("sequelize");
 
+// process.env.TZ = "America/Argentina"; // TimeZone "Continente/Pais/Estado o provincia" fallido
+
 // 2. Inicialización
 const app = express();
 

@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "node main.js",
+    "dev": "node --watch main.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mysql2": "^3.22.3",
+    "sequelize": "^6.37.8"
+  }
+}
