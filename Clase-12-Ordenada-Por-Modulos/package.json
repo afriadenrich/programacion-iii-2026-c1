@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "start": "node main.js",
-    "dev": "node main.js --watch"
+    "start": "node --env-file=.env  src/main.js",
+    "dev": "node  --env-file=.env  --watch src/main.js"
   },
   "dependencies": {
     "express": "^5.2.1",

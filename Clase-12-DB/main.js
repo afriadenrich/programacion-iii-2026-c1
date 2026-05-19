@@ -24,7 +24,12 @@ const app = express();
 // Conexion string - se adapta a distintos motores
 // '{dialect}://{usuario}:{contraseña}@{host}:{puerto}/{nombreDB}'
 // 'mysql://root:123456@localhost:3307/2026-c1'
-const conexion = new Sequelize("mysql://root:123456@localhost:3307/2026-c1");
+
+// Tomamos del archivo .env
+// levantamos bien el server: node --env-file=.env ./main.js
+const db_uri = process.env.DB_URI;
+console.log(db_uri);
+const conexion = new Sequelize(db_uri);
 
 (async () => {
   try {
