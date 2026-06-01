@@ -7,8 +7,16 @@ const app = express();
 // param 1: dónde se disponibliza?
 // param 2: qué carpeta disponibilizo?
 app.use("/imagenes/autos", express.static("imagenes/autos"));
+app.use("/public", express.static("public"));
 
 // nombres comunes carpetas estáticas: assets, public, static, images, videos, audio, etc.
+
+// SSR -> MOTOR DE VISTAS EJS
+// Setteo el motor de vistas
+app.set("view engine", "ejs");
+
+// Setteo la carpeta donde van a ir mis vistas
+app.set("views", "./vistas");
 
 // configurar
 app.use(express.json());

@@ -26,4 +26,9 @@ autoRouter.put("/:id", modificarAuto);
 
 autoRouter.delete("/:id", eliminarAuto);
 
+// ----- RUTAS EJS
+const { buscarAutoEJS } = require("./autos.ejs.controller");
+
+autoRouter.get("/ejs/auto/:id", buscarAutoEJS);
+
 module.exports = autoRouter;
