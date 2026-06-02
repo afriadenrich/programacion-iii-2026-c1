@@ -1,6 +1,7 @@
 // require
 const express = require("express");
 const autoRouter = require("./autos/autos.routes");
+const { default: z } = require("zod");
 
 // instanciar
 const app = express();
@@ -25,6 +26,12 @@ app.use(express.json());
 app.use("/autos", autoRouter);
 
 app.get("/", (req, res) => res.render("index"));
+
+app.use((error, req, res, next) => {
+  if (error instanceof z.ZodError) {
+    res.send(error.issues);
+  }
+});
 
 // escuchar
 app.listen(3000);
