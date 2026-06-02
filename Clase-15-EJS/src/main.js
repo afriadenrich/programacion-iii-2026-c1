@@ -16,13 +16,15 @@ app.use("/public", express.static("public"));
 app.set("view engine", "ejs");
 
 // Setteo la carpeta donde van a ir mis vistas
-app.set("views", "./vistas");
+app.set("views", "./vistas"); //views podría ser
 
 // configurar
 app.use(express.json());
 
 // rutas
 app.use("/autos", autoRouter);
+
+app.get("/", (req, res) => res.render("index"));
 
 // escuchar
 app.listen(3000);

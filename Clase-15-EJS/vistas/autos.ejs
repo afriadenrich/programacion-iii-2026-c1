@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/styles.css" />
+    <title>Autos</title>
+  </head>
+  <body>
+    <button id="crear">Crear</button>
+    <% autos.forEach((auto) => { %>
+    <div class="card">
+      <h2><%= auto.marca %></h2>
+      <p><%= auto.modelo %></p>
+
+      <img
+        width="190"
+        height="100"
+        src="<%= `/imagenes/autos/${auto.imagen}`%>"
+      />
+      <hr />
+      <p>$ <%= auto.precio %></p>
+      <button id="dar-de-baja">Dar de baja</button>
+      <button id="modificar">Modificar</button>
+    </div>
+    <% }) %>
+  </body>
+  <script>
+    document.getElementById(); //...
+  </script>
+</html>
