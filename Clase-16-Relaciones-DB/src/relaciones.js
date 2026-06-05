@@ -10,8 +10,8 @@ Auto.belongsTo(Garage);
 Garage.hasMany(Auto, { as: "autos" });
 
 // 1 a 1
-Auto.hasOne(Conductor);
-Conductor.belongsTo(Auto); // conductor va a tener el AutoID
+Auto.hasOne(Conductor, { foreignKey: "garageId" });
+Conductor.belongsTo(Auto, { foreignKey: "garageId" }); // conductor va a tener el AutoID
 
 // Muchos a Muchos con String
 // Garage.belongsToMany(Conductor, { through: "GarageConductores" });

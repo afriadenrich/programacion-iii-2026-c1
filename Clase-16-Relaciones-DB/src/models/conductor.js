@@ -16,6 +16,12 @@ const Conductor = sequelize.define(
   {
     createdAt: false,
     updatedAt: false,
+    indexes: [
+      {
+        fields: ["garageId"],
+        unique: true,
+      },
+    ],
   }
 );
 

@@ -13,11 +13,16 @@ app.get("/", (req, res) => {
   const garagesPromesa = Garage.findAll();
   const conductoresPromesa = Conductor.findAll();
 
-  Promise.all([autosPromesa, garagesPromesa, conductoresPromesa]).then(
-    (values) => {
-      res.send(values);
-    }
-  );
+  const PROMESATODO = Promise.all([
+    autosPromesa,
+    garagesPromesa,
+    conductoresPromesa,
+  ]);
+
+  PROMESATODO.then((resultados) => {
+    // [resultadoPromesa1, resultadoPromesa2, resultadoPromesa3]
+    res.send(resultados);
+  });
 });
 
 // Garage con TODOS sus autos
